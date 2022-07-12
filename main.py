@@ -9,7 +9,10 @@
 #     Considering natural numbers of the form, a^b, where a, b < 100,
 #       what is the maximum digital sum?
 
-def digital_sum(x):
+from typing import Tuple
+
+
+def digital_sum(x: int) -> int:
     """
     Returns the 'digital sum' of `x`.
 
@@ -26,7 +29,7 @@ def digital_sum(x):
     return sum(map(int, list(str(x))))
 
 
-def main(n):
+def main(n: int) -> Tuple[int, int, int, int]:
     """
     Returns a, b, c, d, where a, b < n, and the digital sum `d` of c = a^b is the maximum of those a and b.
 
